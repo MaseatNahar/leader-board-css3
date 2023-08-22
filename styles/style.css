@@ -7,6 +7,41 @@ body{
     background-color: #F3F1FF;
 
 }
+/* Header part*/
+.navbar{
+    display: flex;
+    justify-content: center;
+    
+    width: 1000px;
+    height: 84px; 
+    background: #562EFF;
+    
+}
+.home{
+    width: 48px;
+    height: 24px;
+    font-size: 14px;
+    color: #F3F1FF;
+    margin-top: 24px;
+    margin-right: 35px;
+    margin-left: 300px;
+}
+.about{
+    width: 48px;
+    height: 24px;
+    font-size: 14px;
+    color: #F3F1FF;
+    margin-top: 24px;
+    margin-right: 35px;
+}
+.work{
+    width: 48px;
+    height: 24px;
+    font-size: 14px;
+    color: #F3F1FF;
+    margin-top: 24px;
+}
+
 main{
     display: flex;
     flex-direction: column;
@@ -88,9 +123,31 @@ hr{
 /*-------------------
    courses styles
    -----------------*/
+
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 23px
+    
+    
+}
+.course{
+    width: 260px;
+    height: 350px;
+    background-color:#FFFFFF;
+    border-radius: 15px;
+    box-shadow: 2px  3px 5px whitesmoke;
+}
+
+
+
 .course .course-banner img{
     width: 224px;
     height: 104px;
+    padding: 15px;
+    
+    
+
    }
 .course-info{
     display: flex;
