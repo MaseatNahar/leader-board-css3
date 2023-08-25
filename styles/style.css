@@ -190,3 +190,40 @@ hr{
     
 
 }
+/*  -----------------
+     Media Queries
+    --------------------*/
+    
+/* Mobile Devices */
+@media only screen and (max-width: 687px) {
+    .container, .navbar{
+        width: 100%;
+    }
+    .players, .blogs, .courses{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .player, .blog{
+        flex-direction: column;
+    }
+    .home, .about, .work{
+        display: flex;
+        justify-content: center;
+        margin-left: 30px;
+        margin-right: 30px;
+        height: 64px;
+    }
+}
+ /* Tablet devices */
+@media only screen and (min-width: 688px) and (max-width: 992px){
+    .container, .navbar{
+        width: 100%;
+    }
+    .players, .container{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .blogs{
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+}
+
